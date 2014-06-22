@@ -8,15 +8,15 @@ def check_solution(matrix):
     for row in matrix:
         for item in row:
             if item == 0:
-                zero_pos = matrix.index(row) + 1    #what row zero cell is.
+                zero_pos = matrix.index(row) + 1   # what row zero cell is.
         matrix_to_list += row
-    sum_of_swaps = 0   # count of swaps
-    sorting_iters = 1   # count of iters for bubble sort
+    sum_of_swaps = 0  # count of swaps
+    sorting_iters = 1  # count of iters for bubble sort
     matrix_to_list.remove(0)
     while sorting_iters < len(matrix_to_list):
         for i in range(len(matrix_to_list) - 1):
             if matrix_to_list[i] > matrix_to_list[i + 1]:
-                matrix_to_list[i], matrix_to_list[i + 1] =\
+                matrix_to_list[i], matrix_to_list[i + 1] = \
                     matrix_to_list[i + 1], matrix_to_list[i]
                 sum_of_swaps += 1
         sorting_iters += 1
@@ -29,6 +29,7 @@ def check_solution(matrix):
     else:
         print('puzzle have not solution')
         return False
+
 
 if __name__ == '__main__':
     solvable_matrix = [[1, 2, 6, 3], [4, 9, 5, 7], [8, 13, 11, 15], [12, 10, 14, 0]]
