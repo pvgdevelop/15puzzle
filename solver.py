@@ -35,7 +35,7 @@ def puzz_astar(start, end):
         expanded_nodes += 1
 
     print ("Expanded nodes:", expanded_nodes)
-    print ("Solution:")
+    print ("Solution: in", len(path)/4, 'moves')
     pp.pprint(path)
 
 
