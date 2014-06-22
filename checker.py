@@ -24,10 +24,10 @@ def check_solution(matrix):
     if game_type % 2 == 0:
         sum_of_swaps += zero_pos
     if sum_of_swaps % 2 == 0:
-        print('puzzle have solution')
+        print('puzzle have solution, wait please')
         return True
     else:
-        print('puzzle have not solution')
+        print('puzzle have not solution, restart the game')
         return False
 
 
